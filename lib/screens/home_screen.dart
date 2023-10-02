@@ -18,7 +18,11 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               child: const Text('Screen 1'),
               onPressed: () {
-                Navigator.pushNamed(context, RoutesNavigation.screen1);
+                Navigator.pushNamed(
+                  context,
+                  RoutesNavigation.screen1,
+                  arguments: 'hello screen 1', //value
+                );
               },
             ),
             ElevatedButton(
